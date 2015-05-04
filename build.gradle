@@ -29,7 +29,9 @@ dependencies {
 task wrapper(type: Wrapper) {
     gradleVersion = '2.3'
 }
-
+war {
+    destinationDir file("$destinationDir/webapps")
+}
 gretty {
     servletContainer = 'jetty9'
     loggingLevel = 'debug'

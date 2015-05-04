@@ -18,6 +18,7 @@ public class App extends Application {
         beanConfig.setVersion("1.0.0");
         beanConfig.setBasePath("/JavaAPIApp/api");
         beanConfig.setResourcePackage("com.microsoft.trysamples.javaapiapp");
+        beanConfig.setSchemes(new String[]{"http", "https"});
         beanConfig.setScan(true);
     }
 
